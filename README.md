@@ -1,1 +1,1 @@
-# Developing-Python-Applications
+# Developing-Python-Applications Course
