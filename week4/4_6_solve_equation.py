@@ -10,7 +10,7 @@ result = 3 * x ** 3 - 4 * x ** 2 + 9 * x + 5
 
 tries = 0
 
-while result != 0:
+while result != 0.00:
 
     temp_x = x + increase
     result = 3 * temp_x ** 3 - 4 * temp_x ** 2 + 9 * temp_x + 5
@@ -19,6 +19,8 @@ while result != 0:
     else:
         x = temp_x
 
-    if result == 0.0:
+    if result == 0.00:
         x = "{:.7f}".format(x)
         print("X =", x)
+
+#OUTPUT: X = -0.4407042
