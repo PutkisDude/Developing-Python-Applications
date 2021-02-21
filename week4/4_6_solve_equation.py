@@ -3,12 +3,9 @@
 #3x^3 - 4x^2 + 9x +5 = 0
 #Here ^ means exponent
 
-
 x = -10000.0
 increase = 999.0
 result = 3 * x ** 3 - 4 * x ** 2 + 9 * x + 5
-
-tries = 0
 
 while result != 0.00:
 
