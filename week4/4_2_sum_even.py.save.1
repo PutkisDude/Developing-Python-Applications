@@ -1,0 +1,27 @@
+#Author Lauri Putkonen
+#Program calculates the sum of even numbers between 2 - 40.
+#Use: for and while
+
+# For loop
+sum = 0
+for x in range(41):
+    if x % 2 == 0:
+        sum += x
+
+print(sum)
+
+# While loop
+
+sum2 = 0
+runs = 1
+
+while runs <= 40:
+    if runs % 2 == 0:
+        sum2 += runs
+        runs += 1
+
+    runs += 1
+
+
+
+print(sum2)
