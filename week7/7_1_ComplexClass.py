@@ -1,3 +1,8 @@
+#AUTHOR LAURI PUTKONEN
+# 1. A complex number is a number that can be expressed in the form a + bi,
+# where a and b are real numbers and i is the imaginary unit.
+# Create class Complex with attributes, constructors and getters/setters.
+
 class Complex:
 
     def __init__(self, a, b, i):
@@ -35,3 +40,8 @@ random.setB(9)
 random.setI('r')
 print(random.getA())
 print(random)
+
+#OUTPUT:
+# 2+3e
+# 5
+# 5+9r
