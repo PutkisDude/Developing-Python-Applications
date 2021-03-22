@@ -3,20 +3,21 @@
 
 class House:
     def __init__(self):
-        self.rooms = 0
+        self.room_amount = 0
         self.squares = 0
-        self.roomNames = []
+        self.rooms = []
 
     def addRoom(self, room):
-        self.rooms += 1
+        self.room_amount += 1
         self.squares += room.sqr
-        self.roomNames.append(room.room_name)
+        self.rooms.append(room)
 
-    def print_house(self):
-        print("The house has", self.rooms, "rooms and", self.squares, "squares")
+    def printHouse(self):
+        return "The house has", self.room_amount, "rooms and", self.squares, "squares"
 
-    def print_rooms(self):
-        print(self.roomNames)
+    def printAllRooms(self):
+        for i in range(len(self.rooms)):
+            print(self.rooms[i].room_name + ", " + str(self.rooms[i].sqr) + "m2")
         
         
 class Room:
@@ -36,12 +37,14 @@ apartment.addRoom(livingRoom)
 bathroom = Room("Bathroom", 3, 2.5)
 apartment.addRoom(bathroom)
 
-apartment.print_house()
-apartment.print_rooms()
+print(apartment.printHouse())
+apartment.printAllRooms()
 
 #OUTPUT:
-# The house has 3 rooms and 52.5 squares
-# ['Kitchen', 'Living room', 'Bathroom']
+# ('The house has', 3, 'rooms and', 52.5, 'squares')
+# Kitchen, 20m2
+# Living room, 25m2
+# Bathroom, 7.5m2
 
 
     
