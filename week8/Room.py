@@ -41,7 +41,7 @@ print(apartment)
 apartment.printAllRooms()
 
 #OUTPUT:
-# ('The house has', 3, 'rooms and', 52.5, 'squares')
+# The house has 3 rooms and 52.5 squares
 # Kitchen, 20m2
 # Living room, 25m2
 # Bathroom, 7.5m2
