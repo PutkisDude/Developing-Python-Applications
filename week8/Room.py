@@ -3,12 +3,10 @@
 
 class House:
     def __init__(self):
-        self.room_amount = 0
         self.squares = 0
         self.rooms = []
 
     def addRoom(self, room):
-        self.room_amount += 1
         self.squares += room.sqr
         self.rooms.append(room)
 
