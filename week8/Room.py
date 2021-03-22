@@ -12,8 +12,8 @@ class House:
         self.squares += room.sqr
         self.rooms.append(room)
 
-    def printHouse(self):
-        return "The house has", self.room_amount, "rooms and", self.squares, "squares"
+    def __str__(self):
+        return "The house has " + str(len(self.rooms)) + " rooms and " + str(self.squares) + " squares"
 
     def printAllRooms(self):
         for i in range(len(self.rooms)):
@@ -37,7 +37,7 @@ apartment.addRoom(livingRoom)
 bathroom = Room("Bathroom", 3, 2.5)
 apartment.addRoom(bathroom)
 
-print(apartment.printHouse())
+print(apartment)
 apartment.printAllRooms()
 
 #OUTPUT:
