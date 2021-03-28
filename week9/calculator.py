@@ -1,3 +1,5 @@
+#Author Lauri Putkonen
+
 from tkinter import *
 
 def clear():
@@ -11,13 +13,19 @@ def click(button):
 
 
 def button_equal():
-    equal = eval(text.get())
+    equal = eval(text.get()) # I decided use eval(), tho its not recommended because it's not safe
     text.delete(0, END)
     text.insert(0, equal)
 
+def removeLast():
+    removed = text.get()
+    removed = removed[:-1]
+    text.delete(0, END)
+    text.insert(0, removed)
 
 window = Tk()
 window.title("Crappy Calculator")
+window.resizable(False, False)
 
 text = Entry(window, borderwidth=2)
 text.grid(row=0, column=0, columnspan=4, pady=20)
@@ -41,10 +49,13 @@ button_divide = Button(window, padx=25, pady=25, text="/", command=lambda: click
 button_multiple = Button(window, padx=25, pady=25, text="*", command=lambda: click("*"))
 button_equal = Button(window, padx=25, pady=25, text="=", bg="green", command=button_equal)
 button_clear = Button(window, padx=25, pady=5, text="Clear", command=clear)
+button_undo = Button(window, padx=25, pady=5, text="Undo", command=removeLast)
+
 
 
 #ADD Buttons - 1st row
 
+button_undo.grid(row=1, column=0, columnspan=2)
 button_clear.grid(row=1, column=2, columnspan=2)
 #2nd row
 button_7.grid(row=2, column=0)
