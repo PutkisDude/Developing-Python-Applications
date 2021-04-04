@@ -1,5 +1,6 @@
 # Author Lauri Putkonen
 # Create a small pygame game: e.g. moving objects on a screen.
+# Video - https://youtu.be/7vtKaASa0oY
 
 import pygame
 from mobs import Mob
