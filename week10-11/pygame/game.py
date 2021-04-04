@@ -4,7 +4,7 @@
 import pygame
 from mobs import Mob
 
-# PRESS ARROWOR WASD KEYS TO PASS MOBS
+# PRESS ARROW OR WASD KEYS TO PASS MOBS
 # ESC EXIT
 
 
@@ -13,7 +13,7 @@ pygame.init()
 clock = pygame.time.Clock()
 mobs = []
 
-# Create 640x480 screen
+# Create screen
 width = 580 # Width of the window
 height = 360 # Height of the window
 background = pygame.image.load("background.png")
