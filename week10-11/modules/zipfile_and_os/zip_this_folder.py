@@ -18,7 +18,7 @@
 # With os.path methods
 # I tried os.getcwd() to get current working directory to pack folder
 #But it packed all sub folders aswell so i decided use just "./"
-# I haven't try code on windows so not sure if it works there
+# I haven't tried run code on windows so not sure if it works there
 
 # Part of this code is copied from geeksforgeeks.org
 
@@ -59,7 +59,7 @@ def main():
         for file in file_paths:
             zip.write(file)
   
-    print('Files zipped!')        
+    print('Files zipped!\n')        
   
   
 if __name__ == "__main__":
