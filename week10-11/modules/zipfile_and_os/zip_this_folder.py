@@ -2,7 +2,7 @@
 #Choose 3 different modules and explain 2 functions (purpose and code) from
 #each module:
 
-#ZipFile
+#ZipFile - module
 # You can pack files easily
 # With this script you can pack current folder
 # which is handy if you want send multiple files somewhere
@@ -26,7 +26,7 @@ from zipfile import ZipFile
 import os
 import sys
 
-zip_file = "text.zip"
+zip_file = "folder.zip"
 
 this_file = file_name =  os.path.basename(sys.argv[0])
   
